@@ -12,7 +12,7 @@ export const ProductsContext = createContext({
 });
 
 // Constants should be in uppercase and preferably in a separate config file
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || import.meta.env.VITE_API_LOCALHOST;
 
 // Custom hook for product API calls
 const useProductAPI = () => {
